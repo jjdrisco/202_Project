@@ -205,7 +205,7 @@ def insert_trend_data_from_dataframe(df, entity_type, entity_id):
     Parameters:
     - df: Pandas DataFrame with columns 'Week' and a data column
     - entity_type: String, either 'artist' or 'artwork'
-    - name: String, the name of the entity (e.g., 'Vincent_van_Gogh')
+    - entity_id: String, the unique identifier of the entity (e.g., 'Vincent_van_Gogh_{birthday}')
     """
     redis_client = connect_to_redis()
     if not redis_client:
@@ -255,6 +255,39 @@ def insert_trend_data_from_dataframe(df, entity_type, entity_id):
     print("Data has been persisted to disk")
 
 def retreive_from_redis(entity_type, entity_id):
+    """
+    Retrieve data from Redis for a given entity type and entity ID.
+    This function connects to a Redis database, retrieves data associated with
+    the specified entity type and entity ID, and converts the data into a pandas
+    DataFrame.
+    Args:
+        entity_type (str): The type of the entity (e.g., 'user', 'product').
+        entity_id (str): The unique identifier of the entity.
+    Returns:
+        pd.DataFrame: A DataFrame containing the retrieved data with columns
+                      'Week' and 'Popularity'. The 'Week' column is converted
+                      to datetime, and the 'Popularity' column is converted to
+                      numeric values.
+    Raises:
+        ConnectionError: If the connection to Redis fails.
+        ValueError: If the retrieved data cannot be converted to a DataFrame.
+    Example:
+        >>> df = retreive_from_redis('product', '12345')
+        Retrieved 10 data points for trends:product:12345
+        2021-01-01: 100
+        2021-01-08: 150
+        2021-01-15: 200
+        2021-01-22: 250
+        2021-01-29: 300
+        >>> print(df.head())
+                  Week  Popularity
+        0  2021-01-01         100
+        1  2021-01-08         150
+        2  2021-01-15         200
+        3  2021-01-22         250
+        4  2021-01-29         300
+    """
+
     # For retrieving the data
     redis_client = connect_to_redis()
     if redis_client:
@@ -302,3 +335,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
