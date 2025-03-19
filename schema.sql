@@ -144,3 +144,16 @@ CREATE TABLE Artist_Styles (
 
 ALTER TABLE Artist_Styles
 ADD CONSTRAINT unique_artist_style UNIQUE (artist_name, birth_year, style_name);
+
+-- Artist Relationships Table (Teachers/Pupils/Friends)
+CREATE TABLE Artist_Relationships (
+  artist1_name TEXT NOT NULL,
+  birth_year1 INT,
+  birth_year1_key INT GENERATED ALWAYS AS (COALESCE(birth_year1, -999999)) STORED,
+  artist2_name TEXT NOT NULL,
+  relationship_type TEXT CHECK (relationship_type IN ('Pupil', 'Teacher', 'Friend', 'Influenced By', 'Influenced On')),
+  PRIMARY KEY (artist1_name, birth_year1_key, artist2_name, relationship_type),
+  FOREIGN KEY (artist1_name, birth_year1_key) REFERENCES Artists(artist_name, birth_year_key) ON DELETE CASCADE,
+  -- Prevent self-relationships
+  CONSTRAINT no_self_relationship CHECK (artist1_name != artist2_name)
+);
