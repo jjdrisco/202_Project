@@ -60,95 +60,247 @@ def get_page_with_curl_impersonate(url, browser="chrome110"):
 
 def configure_and_initialize():
     """
-    Configures Chrome options with a specified user profile and initializes a headless Chrome WebDriver.
+    Configures Chrome options to impersonate a real browser and initializes a Chrome WebDriver.
     Returns:
         webdriver.Chrome: An instance of Chrome WebDriver configured with the specified options.
     """
 
     # Configure Chrome options with your profile
     chrome_options = Options()
+    
+    # Use existing user profile (helps maintain cookies, extensions, etc.)
     chrome_options.add_argument("--user-data-dir=C:\\Users\\{YOUR_USERNAME}\\AppData\\Local\\Google\\Chrome\\User Data")  # Update path
-    chrome_options.add_argument("--profile-directory=Default")  # Update with your profile name
-    # UNCOMMENT TO RUN HEADLESS
-    #chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--profile-directory=Your Chrome")  # Update with your profile name
+    
+    # Add common browser fingerprinting mitigations
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")  # Prevents detection [[10]]
+    chrome_options.add_argument("--start-maximized")  # Start with maximized window
+    chrome_options.add_argument("--disable-infobars")  # Disable info bars
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])  # Remove automation flags [[3]]
+    chrome_options.add_experimental_option("useAutomationExtension", False)  # Disable automation extension [[10]]
+    
+    # Add realistic user agent (optional, update with a current one)
+    chrome_options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36")
+    
+    # UNCOMMENT TO RUN HEADLESS (with additional settings to make it less detectable)
+    # chrome_options.add_argument("--headless=new")  # New headless mode for Chrome v109+ [[3]]
+    # chrome_options.add_argument("--window-size=1920,1080")  # Realistic resolution for headless
+    # chrome_options.add_argument("--disable-gpu")  # Disable GPU acceleration in headless
 
     # Initialize Chrome with profile
     driver = webdriver.Chrome(options=chrome_options)
+    
+    # Execute CDP commands to modify navigator properties (further anti-detection)
+    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
+        "source": """
+        Object.defineProperty(navigator, 'webdriver', {
+            get: () => undefined
+        });
+        """
+    })
 
     return driver
 
 def scrape(driver, entity_name):
     """
     Scrapes Google Trends data for a given entity using a hybrid approach of curl impersonation and Selenium.
+    Checks for "Interest over time" element and refreshes/fixes if needed.
+    
     Args:
         driver (selenium.webdriver): The Selenium WebDriver instance used for browser automation.
         entity_name (str): The name of the entity (e.g., artist, topic) to search for on Google Trends.
+    
     Raises:
         Exception: If an error occurs during the scraping process, it will be caught and printed.
-    Notes:
-        - This function first uses curl impersonation to fetch the Google Trends homepage and saves it as a temporary HTML file.
-        - Selenium then loads this saved HTML file to maintain the curl impersonation while still allowing for interaction.
-        - The function navigates to the Google Trends search page, enters the entity name, and selects the second autocomplete suggestion if available.
-        - Finally, it clicks the "Export" button to download the search activity data for the specified entity.
     """
 
     try:
         # Open the Google Trends homepage
         url = "https://trends.google.com/trends/explore"
         response = get_page_with_curl_impersonate(url)
-        #driver.post(url)
         
         # Save the response to a temporary HTML file
         with open("trends_page.html", "wb") as f:
             f.write(response.content)
         
         # Let Selenium load the saved HTML to maintain the curl impersonation
-        # but still use Selenium for interaction
         driver.get("file://" + os.path.abspath("trends_page.html"))
         
-        # For subsequent navigation, we'll use a hybrid approach
-        # Now proceed with the normal Selenium interaction
-        wait = WebDriverWait(driver, 10)
+        # Use a slightly longer wait time for better reliability
+        wait = WebDriverWait(driver, 12)
         
         # Navigate to the actual URL after impersonation prep
         driver.get(url)
+        time.sleep(3)
+        driver.refresh()
         
         # Wait for the page to load and the search input to be available
         search_input = wait.until(EC.element_to_be_clickable((By.ID, "input-29")))
         
-        # Enter the artist name
+        # Enter the entity name
+        search_input.clear()
         search_input.send_keys(entity_name)
         
         # Small delay to allow autocomplete suggestions to appear
-        time.sleep(2)
+        time.sleep(3)
         
-        # Wait for autocomplete suggestions and click the second option
-        suggestions = wait.until(EC.presence_of_all_elements_located(
-            (By.CSS_SELECTOR, "md-virtual-repeat-container md-autocomplete-parent-scope")
-        ))
-        
-        # Click the second suggestion if available
-        if len(suggestions) >= 2:
-            suggestions[1].click()
-        else:
-            # Fallback: press Enter to search with the entered text
+        # Try to get autocomplete suggestions with error handling
+        try:
+            suggestions = wait.until(EC.presence_of_all_elements_located(
+                (By.CSS_SELECTOR, "md-virtual-repeat-container md-autocomplete-parent-scope")
+            ))
+            
+            # Click the second suggestion if available
+            if len(suggestions) >= 2:
+                suggestions[1].click()
+            else:
+                # Fallback: press Enter to search with the entered text
+                search_input.send_keys(Keys.RETURN)
+        except Exception as e:
+            print(f"Could not find suggestions, using direct search: {e}")
             search_input.send_keys(Keys.RETURN)
         
         # Wait for the search results to load
         time.sleep(5)
         
-        # Find and click the "Export" button
-        export_button = wait.until(EC.element_to_be_clickable(
-            (By.CSS_SELECTOR, "button.widget-actions-item.export")
-        ))
-        export_button.click()
+        # Check if "Interest over time" element is present
+        interest_over_time_present = False
+        try:
+            interest_element = wait.until(EC.presence_of_element_located(
+                (By.XPATH, "//div[contains(@class, 'fe-line-chart-header-title') and contains(text(), 'Interest over')]")
+            ))
+            interest_over_time_present = True
+            print("Interest over time chart is present - data loaded successfully!")
+        except:
+            interest_over_time_present = False
+            print("Interest over time chart not found - trying refresh...")
+            
+            # First simply try refreshing the page
+            driver.refresh()
+            time.sleep(5)
+            
+            # Check again after refresh
+            try:
+                interest_element = wait.until(EC.presence_of_element_located(
+                    (By.XPATH, "//div[contains(@class, 'fe-line-chart-header-title') and contains(text(), 'Interest over')]")
+                ))
+                interest_over_time_present = True
+                print("Interest over time chart appeared after refresh!")
+            except:
+                interest_over_time_present = False
+                print("Interest over time chart still not found after refresh - will try time range fix...")
+                
+                # Try the time range fix if refresh didn't work
+                try:
+                    # Find and click the time range dropdown
+                    dropdown_button = wait.until(EC.element_to_be_clickable(
+                        (By.CSS_SELECTOR, "md-select[aria-label*='Select time period']")
+                    ))
+                    dropdown_button.click()
+                    time.sleep(2)
+                    
+                    # Try to find and click "Past hour" option by ID
+                    try:
+                        past_hour_option = wait.until(EC.element_to_be_clickable((By.ID, "select_option_14")))
+                        past_hour_option.click()
+                        print("Selected 'Past hour' time range")
+                        time.sleep(5)
+                    except:
+                        # Try JavaScript if direct click fails
+                        script = """
+                        var options = document.querySelectorAll('md-option');
+                        for(var i=0; i<options.length; i++) {
+                            if(options[i].textContent.includes('Past hour')) {
+                                options[i].click();
+                                return true;
+                            }
+                        }
+                        return false;
+                        """
+                        driver.execute_script(script)
+                        print("Used JavaScript to select 'Past hour'")
+                        time.sleep(5)
+                    
+                    # Check if data loaded with new time range
+                    try:
+                        interest_element = wait.until(EC.presence_of_element_located(
+                            (By.XPATH, "//div[contains(@class, 'fe-line-chart-header-title') and contains(text(), 'Interest over')]")
+                        ))
+                        interest_over_time_present = True
+                        print("Interest over time chart appeared after changing time range!")
+                        
+                        # Now switch back to Past 12 months
+                        dropdown_button = wait.until(EC.element_to_be_clickable(
+                            (By.CSS_SELECTOR, "md-select[aria-label*='Select time period']")
+                        ))
+                        dropdown_button.click()
+                        time.sleep(2)
+                        
+                        try:
+                            past_12_months = wait.until(EC.element_to_be_clickable((By.ID, "select_option_13")))
+                            past_12_months.click()
+                            print("Switched back to 'Past 12 months'")
+                            time.sleep(5)
+                        except:
+                            # Try JavaScript if direct click fails
+                            script = """
+                            var options = document.querySelectorAll('md-option');
+                            for(var i=0; i<options.length; i++) {
+                                if(options[i].textContent.includes('Past 12 months')) {
+                                    options[i].click();
+                                    return true;
+                                }
+                            }
+                            return false;
+                            """
+                            driver.execute_script(script)
+                            print("Used JavaScript to select 'Past 12 months'")
+                            time.sleep(5)
+                    except:
+                        print("Interest over time chart still not appearing")
+                except Exception as e:
+                    print(f"Error during time range fix: {e}")
         
-        # Wait for the file to download
-        print(f"Downloading search activity data for '{entity_name}'...")
-        time.sleep(10)
+        # Final check for data availability
+        if not interest_over_time_present:
+            try:
+                interest_element = wait.until(EC.presence_of_element_located(
+                    (By.XPATH, "//div[contains(@class, 'fe-line-chart-header-title') and contains(text(), 'Interest over')]")
+                ))
+                interest_over_time_present = True
+                print("Interest over time chart is now present - proceeding with export")
+            except:
+                print("Final check: Interest over time chart not found")
+        
+        # Only attempt export if data seems to be available, or try anyway as last resort
+        if interest_over_time_present or True:  # Always try, but log the situation
+            try:
+                # Find and click the "Export" button
+                export_button = wait.until(EC.element_to_be_clickable(
+                    (By.CSS_SELECTOR, "button.widget-actions-item.export")
+                ))
+                export_button.click()
+                
+                # Wait for the file to download
+                print(f"Downloading search activity data for '{entity_name}'...")
+                time.sleep(10)
+            except Exception as e:
+                print(f"Could not find or click export button: {e}")
+                
+                # Try alternative approach to find export button
+                try:
+                    export_buttons = driver.find_elements(By.XPATH, "//button[contains(@class, 'export')]")
+                    if export_buttons:
+                        export_buttons[0].click()
+                        print("Found export button via alternative method")
+                        time.sleep(10)
+                    else:
+                        print("Could not find export button")
+                except Exception as e2:
+                    print(f"Alternative export button attempt failed: {e2}")
         
     except Exception as e:
-        print(f"An error occurred while accessing google trends: {e}")
+        print(f"An error occurred while accessing Google Trends: {e}")
 
     finally:
         driver.quit()
@@ -307,7 +459,43 @@ def retreive_from_redis(entity_type, entity_id):
         retreived_df['Popularity'] = pd.to_numeric(retreived_df['Popularity'])
         
         return retreived_df
+
+def scrape_entity(entity_name, entity_type, entity_id, DOWNLOADS_FOLDER_FP):
+    """ 
+    Scrape Google Trends for entity data and save to Redis 
+    Returns dataframe from redis
+    """
+    try:
+        df = retreive_from_redis(entity_type, entity_id)
+        if df.shape[0] == 0:
+            raise Exception("No data in Redis")
+        print("Data found in Redis")
+    except:
+        attempts = 0
+        while attempts < 3:
+            try:
+                print("Downloading from Google Trends")
+
+                driver =  configure_and_initialize()
+                scrape(driver, entity_name)
+                df =  process_scrape(DOWNLOADS_FOLDER_FP, entity_name)
+                insert_trend_data_from_dataframe(df, entity_type, entity_id)
+
+                df = retreive_from_redis(entity_type, entity_id)
+                if df.shape[0] != 0:
+                    attempts = 3
+                    print("Data downloaded from Google Trends")
+            except:
+                attempts += 1
+                print("Failed to download data from Google Trends")
+
+    finally:
+        if df.shape[0] != 0:
+            return df
+        else:
+            return None
     
+
 def main():
     DOWNLOADS_FOLDER_FP = "/Users/***REMOVED***/Downloads/"
     YOUR_USERNAME = "***REMOVED***"
