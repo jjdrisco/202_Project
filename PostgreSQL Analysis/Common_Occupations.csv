@@ -1,0 +1,1078 @@
+occupation_name,total_artists,pre_1800,19th_century,20th_century,21st_century
+painter,6069,2038,2292,1738,1
+sculptor,1510,270,412,826,2
+drawer,1187,449,359,379,0
+photographer,1009,22,417,569,1
+printmaker,960,392,254,314,0
+artist,883,138,215,528,2
+graphic artist,788,206,316,266,0
+illustrator,783,118,399,266,0
+writer,603,129,233,241,0
+visual artist,563,72,150,341,0
+engraver,484,365,85,34,0
+university teacher,469,32,189,248,0
+designer,446,37,192,217,0
+architect,376,153,99,124,0
+politician,317,76,106,134,1
+poet,304,92,112,100,0
+lithographer,263,48,162,53,0
+architectural draftsperson,238,92,85,61,0
+teacher,233,23,123,87,0
+installation artist,220,1,0,219,0
+etcher,218,135,78,5,0
+journalist,184,10,87,87,0
+ceramicist,158,14,71,73,0
+film director,145,0,20,125,0
+actor,145,11,17,117,0
+botanist,143,33,64,46,0
+conceptual artist,129,0,0,129,0
+scenographer,129,11,70,48,0
+video artist,125,0,0,125,0
+fashion designer,119,0,24,95,0
+performance artist,117,0,1,116,0
+graphic designer,115,5,51,59,0
+screenwriter,104,0,20,84,0
+singer,103,0,8,93,2
+medalist,102,56,33,13,0
+musician,101,14,10,76,1
+composer,95,6,18,71,0
+jewelry designer,92,3,31,58,0
+caricaturist,87,16,56,15,0
+art historian,86,38,31,17,0
+association football player,83,0,8,75,0
+watercolorist,81,24,50,7,0
+costume designer,78,1,30,47,0
+businessperson,78,3,33,42,0
+illuminator,72,70,1,1,0
+publisher,71,56,7,8,0
+photojournalist,70,0,13,57,0
+translator,68,20,29,19,0
+engineer,66,23,21,22,0
+landscape painter,66,35,29,2,0
+mathematician,65,23,17,25,0
+lawyer,63,10,29,24,0
+glass artist,62,3,15,44,0
+portraitist,62,47,14,1,0
+art collector,61,28,20,13,0
+textile artist,60,1,17,41,1
+goldsmith,60,52,6,2,0
+cartographer,59,54,4,1,0
+historian,59,16,22,21,0
+filmmaker,58,0,4,54,0
+philosopher,58,21,20,17,0
+calligrapher,55,36,9,10,0
+silversmith,55,42,10,3,0
+film actor,55,0,7,48,0
+pedagogue,55,4,25,26,0
+novelist,53,5,14,34,0
+researcher,51,3,7,39,2
+playwright,51,15,23,13,0
+art theorist,49,11,24,14,0
+graffiti artist,48,0,0,47,1
+collagist,47,0,15,32,0
+television producer,47,0,0,47,0
+art critic,46,2,31,13,0
+physician,46,15,18,13,0
+art educator,44,4,23,17,0
+muralist,44,2,14,28,0
+television actor,41,1,1,39,0
+director,41,0,8,33,0
+songwriter,41,1,2,38,0
+rapper,41,0,1,40,0
+xylographer,40,32,7,1,0
+inventor,40,19,16,5,0
+singer-songwriter,39,0,1,37,1
+poster artist,39,0,35,4,0
+professor,39,5,14,20,0
+curator,39,9,15,15,0
+postage stamp designer,38,1,20,17,0
+film producer,38,1,1,36,0
+explorer,37,14,16,7,0
+diplomat,37,11,13,13,0
+typographer,36,3,13,20,0
+entrepreneur,36,4,21,11,0
+attic vase-painter,35,35,0,0,0
+military personnel,34,14,12,8,0
+ukiyo-e artist,33,17,15,1,0
+editor,33,13,8,12,0
+cartoonist,32,5,16,11,0
+printer,32,17,9,6,0
+zoologist,31,7,18,6,0
+cabinetmaker,31,24,6,1,0
+naturalist,30,17,11,2,0
+botanical illustrator,30,16,13,1,0
+military officer,29,8,5,16,0
+art dealer,29,22,3,4,0
+entomologist,28,4,13,10,1
+physicist,27,10,10,7,0
+red-figure vase painter,27,27,0,0,0
+grand couturier,27,0,12,15,0
+stage actor,27,3,5,19,0
+basketball player,26,0,2,24,0
+record producer,26,0,0,26,0
+comics artist,26,1,11,14,0
+exhibition curator,25,0,5,20,0
+guitarist,25,0,0,24,1
+fresco painter,24,20,3,1,0
+author,24,1,14,9,0
+new media artist,23,0,0,23,0
+model,23,0,8,15,0
+furniture designer,23,6,11,6,0
+porcelain painter,23,12,11,0,0
+economist,23,0,6,17,0
+war photographer,23,0,10,13,0
+scientific illustrator,23,12,11,0,0
+opinion journalist,23,1,12,10,0
+astronomer,23,12,6,5,0
+judge,23,5,9,9,0
+choreographer,22,1,6,15,0
+ornithologist,22,7,10,5,0
+theologian,21,11,3,7,0
+archaeologist,21,6,14,1,0
+autobiographer,21,2,13,6,0
+chemist,21,7,9,5,0
+land artist,20,0,0,20,0
+anthropologist,20,3,13,4,0
+pastellist,20,5,13,2,0
+cinematographer,20,0,6,14,0
+international forum participant,20,0,0,20,0
+potter,19,6,5,8,0
+merchant,19,10,5,4,0
+printseller,19,19,0,0,0
+multimedia artist,19,0,0,19,0
+master craftsman,19,19,0,0,0
+stained-glass artist,18,5,7,6,0
+recording artist,18,0,1,17,0
+pianist,18,1,1,16,0
+decorator,18,12,4,2,0
+civil servant,18,2,5,11,0
+jurist,18,7,7,4,0
+science fiction writer,17,0,6,11,0
+video installation artist,17,0,0,17,0
+biologist,17,3,8,6,0
+mycologist,17,3,8,6,0
+geographer,17,10,3,4,0
+academic,16,1,6,9,0
+bookseller,16,11,2,3,0
+copperplate engraver,16,13,2,1,0
+catholic priest,16,4,5,7,0
+essayist,16,3,6,7,0
+black-figure vase painter,16,16,0,0,0
+architectural photographer,15,0,11,4,0
+geologist,15,2,8,5,0
+fashion photographer,15,0,3,12,0
+musicologist,15,1,5,9,0
+restorer,15,4,3,8,0
+carver,15,13,0,2,0
+print publisher,15,15,0,0,0
+cricketer,15,0,3,12,0
+theatrical director,14,2,1,11,0
+scientist,14,7,4,3,0
+traveler,14,2,9,3,0
+urban planner,14,3,8,3,0
+botanical collector,14,2,9,3,0
+jeweler,14,3,7,4,0
+dressmaker,13,0,4,9,0
+genre painter,13,1,12,0,0
+civil engineer,13,5,5,3,0
+television presenter,13,0,1,12,0
+contemporary artist,13,0,0,13,0
+textile designer,13,2,4,7,0
+instrument maker,13,11,2,0,0
+collector,12,4,5,3,0
+diarist,12,3,7,2,0
+conductor,12,0,4,8,0
+industrial designer,12,0,1,11,0
+radio personality,12,0,0,12,0
+history painter,12,2,10,0,0
+assemblage artist,11,0,6,5,0
+naval officer,11,3,2,6,0
+miniature painter,11,8,3,0,0
+lyricist,11,0,1,10,0
+biographer,11,4,4,3,0
+ceramics designer,11,0,8,3,0
+producer,11,0,1,10,0
+association football coach,11,0,1,10,0
+sociologist,11,0,4,7,0
+librarian,11,6,4,1,0
+professional gamer,10,0,0,10,0
+voice actor,10,0,1,9,0
+personal stylist,10,0,0,10,0
+miniaturist,10,8,1,1,0
+performing artist,10,1,0,9,0
+jazz musician,10,0,1,9,0
+linguist,10,5,3,2,0
+stampcutter,10,8,2,0,0
+interior designer,10,1,6,3,0
+mezzotinter,10,10,0,0,0
+street artist,10,0,0,10,0
+literary critic,10,0,7,3,0
+dancer,10,1,3,6,0
+bhikkhu,10,7,2,1,0
+surgeon,10,5,5,0,0
+catholic bishop,10,2,2,6,0
+activist,10,0,3,7,0
+iconographer,10,7,2,1,0
+creator,9,1,1,7,0
+wood carver,9,3,4,2,0
+general contractor,9,7,1,1,0
+landscape architect,9,4,1,4,0
+australian rules football player,9,0,2,7,0
+sport cyclist,9,0,4,5,0
+watchmaker,9,7,1,1,0
+film score composer,9,0,1,8,0
+aircraft pilot,9,0,6,3,0
+baseball player,9,0,1,8,0
+barrister,9,1,4,4,0
+film editor,9,0,1,8,0
+non-fiction writer,9,2,4,3,0
+resistance fighter,9,1,1,7,0
+tapestry designer,9,6,2,1,0
+ichthyologist,9,0,5,4,0
+mosaicist,9,1,3,5,0
+sailor,8,0,5,3,0
+exlibrist,8,4,3,1,0
+kinetic artist,8,1,0,7,0
+court painter,8,7,0,0,1
+world traveler,8,3,5,0,0
+animator,8,0,1,7,0
+athletics competitor,8,0,2,6,0
+gallerist,8,0,3,5,0
+librettist,8,3,4,1,0
+comedian,8,0,3,5,0
+lecturer,8,1,2,5,0
+political scientist,8,0,0,8,0
+psychiatrist,8,0,3,5,0
+paleontologist,7,0,4,3,0
+physiologist,7,3,3,1,0
+educator,7,0,4,3,0
+christian minister,7,2,3,2,0
+art model,7,1,6,0,0
+chess player,7,0,1,6,0
+pharmacist,7,3,2,2,0
+pornographic actor,7,0,0,7,0
+glassblower,7,0,3,4,0
+rugby union player,7,0,1,6,0
+banker,7,1,2,4,0
+priest,7,4,2,1,0
+plastic artist,7,0,0,7,0
+partisan,7,0,0,7,0
+wood engraver,7,1,4,2,0
+manufacturer,7,1,0,6,0
+visual poet,7,0,0,7,0
+glass painter,7,6,1,0,0
+monk,7,6,1,0,0
+farmer,7,1,2,4,0
+soldier,7,2,3,2,0
+comics writer,7,0,0,7,0
+type designer,7,1,5,1,0
+lepidopterist,7,2,3,2,0
+disc jockey,6,0,0,6,0
+critic,6,0,2,4,0
+concept artist,6,0,1,5,0
+sound artist,6,0,0,6,0
+patron of the arts,6,1,3,2,0
+opera singer,6,0,2,4,0
+scenic designer,6,1,2,3,0
+environmentalist,6,0,0,6,0
+music teacher,6,0,2,4,0
+esperantist,6,0,3,3,0
+theatre designer,6,0,3,3,0
+american football player,6,0,1,5,0
+blogger,6,0,0,6,0
+daguerreotypist,6,1,5,0,0
+documentarian,6,0,1,5,0
+trade unionist,6,0,2,4,0
+philanthropist,6,1,4,1,0
+suffragist,6,0,6,0,0
+saxophonist,6,0,0,5,1
+business executive,6,0,1,5,0
+ice hockey player,6,0,0,6,0
+enameler,6,4,1,1,0
+astrologer,6,4,1,1,0
+revolutionary,6,1,4,1,0
+professional wrestler,6,0,0,6,0
+salonnière,6,3,2,1,0
+mountaineer,6,0,3,3,0
+manager,6,1,0,5,0
+pottery painter,6,3,3,0,0
+computer scientist,6,1,0,5,0
+preacher,5,1,0,4,0
+artisan,5,3,2,0,0
+official,5,3,0,2,0
+contributing editor,5,1,1,3,0
+violinist,5,1,3,1,0
+dramaturge,5,1,1,3,0
+production designer,5,0,2,3,0
+prose writer,5,0,3,2,0
+youtuber,5,0,0,5,0
+short story writer,5,1,1,3,0
+boxer,5,0,1,4,0
+modiste,5,0,3,2,0
+pensioner,5,0,0,5,0
+glass engraver,5,4,1,0,0
+organist,5,1,3,1,0
+statesperson,5,4,0,1,0
+cleric,5,3,1,1,0
+tennis player,5,0,1,4,0
+conservator,5,1,4,0,0
+chair maker,5,5,0,0,0
+children\s writer,5,1,2,2,0
+metalsmith,5,5,0,0,0
+athlete,5,1,0,4,0
+rugby league player,5,0,1,4,0
+basketball coach,5,0,0,5,0
+brazier,5,5,0,0,0
+racing automobile driver,5,0,1,4,0
+founder,5,4,1,0,0
+women\s rights activist,5,0,1,4,0
+swimmer,5,0,0,4,1
+anatomist,5,5,0,0,0
+volleyball player,5,0,0,5,0
+copyist,5,4,1,0,0
+humorist,4,1,2,1,0
+music theorist,4,1,2,1,0
+geneticist,4,0,2,2,0
+artivist,4,0,0,4,0
+poet lawyer,4,2,1,1,0
+environmental artist,4,0,0,3,1
+editing staff,4,0,3,1,0
+psychologist,4,1,0,3,0
+tailor,4,0,3,1,0
+literary scholar,4,0,1,3,0
+presenter,4,0,0,4,0
+childrens writer,4,0,3,1,0
+deacon,4,3,1,0,0
+statistician,4,1,1,2,0
+modeler,4,1,1,2,0
+association football manager,4,0,1,3,0
+communard,4,0,4,0,0
+handicrafter,4,2,1,1,0
+topologist,4,0,1,3,0
+political activist,4,0,0,4,0
+camera operator,4,0,1,3,0
+drummer,4,1,0,3,0
+antiquarian,4,3,1,0,0
+social activist,4,0,1,3,0
+mangaka,4,0,1,3,0
+malacologist,4,1,3,0,0
+drawing teacher,4,1,2,1,0
+serigrapher,4,0,0,4,0
+cellist,4,1,2,1,0
+conservationist,4,0,2,2,0
+rower,4,0,0,4,0
+financier,4,1,0,3,0
+balloonist,4,1,3,0,0
+french resistance fighter,4,0,1,3,0
+football player,4,0,0,4,0
+puppeteer,4,0,4,0,0
+carcinologist,4,0,2,2,0
+computer artist,4,0,0,4,0
+mechanical engineer,4,2,0,2,0
+human rights activist,4,0,2,2,0
+musical instrument maker,4,3,1,0,0
+television director,4,0,0,4,0
+zoological collector,4,1,3,0,0
+printer of lithographs,4,4,0,0,0
+perfumer,3,0,2,1,0
+solicitor,3,0,2,1,0
+battle painter,3,1,2,0,0
+monarch,3,3,0,0,0
+clockmaker,3,3,0,0,0
+character actor,3,0,0,3,0
+tapestry weaver,3,1,1,1,0
+judoka,3,0,0,3,0
+aristocrat,3,3,0,0,0
+animal painter,3,2,1,0,0
+book artist,3,1,0,2,0
+egyptologist,3,0,2,1,0
+agronomist,3,0,3,0,0
+physician writer,3,1,1,1,0
+beach volleyball player,3,0,0,3,0
+police officer,3,0,0,3,0
+horticulturist,3,0,3,0,0
+restaurateur,3,0,0,3,0
+mineralogist,3,1,1,1,0
+ballet dancer,3,1,0,2,0
+pteridologist,3,2,1,0,0
+drafter,3,1,0,2,0
+embroiderer,3,0,2,1,0
+classical philologist,3,0,2,1,0
+oceanographer,3,1,1,1,0
+occultist,3,0,2,1,0
+decorative painter,3,2,1,0,0
+editorial cartoonist,3,0,3,0,0
+carpenter,3,1,0,2,0
+jazz guitarist,3,0,0,3,0
+ecologist,3,0,0,3,0
+gynaecologist,3,2,1,0,0
+dentist,3,2,1,0,0
+scholar,3,2,1,0,0
+vase painter,3,3,0,0,0
+womens rights activist,3,0,0,3,0
+executive producer,3,0,0,3,0
+ancient greek potter,3,3,0,0,0
+white-groud vase-painter,3,3,0,0,0
+plantation owner,3,1,0,2,0
+quiltmaker,3,0,0,3,0
+figure skater,3,0,0,1,2
+aesthetician,3,1,1,1,0
+artistic gymnast,3,0,0,3,0
+military commander,3,3,0,0,0
+theoretical physicist,3,0,2,1,0
+sovereign,3,3,0,0,0
+shoe designer,3,0,0,3,0
+clerk,3,2,1,0,0
+abolitionist,3,1,2,0,0
+industrialist,3,0,2,1,0
+film critic,3,0,1,2,0
+herpetologist,3,0,0,3,0
+amateur wrestler,3,0,0,3,0
+head teacher,3,1,1,1,0
+surveyor,3,2,1,0,0
+gilder,3,3,0,0,0
+weaver,3,1,0,2,0
+music arranger,3,0,0,3,0
+biochemist,3,0,1,2,0
+ethnographer,3,0,2,1,0
+theatre manager,3,0,2,1,0
+philologist,3,1,0,2,0
+medal cutter,3,3,0,0,0
+marqueteur,3,3,0,0,0
+newspaper editor,3,0,2,1,0
+classical scholar,3,2,0,1,0
+faculty member,3,0,1,2,0
+q28638974,3,2,1,0,0
+military engineer,3,1,2,0,0
+woodworker,3,1,0,2,0
+anglican priest,3,0,0,3,0
+encyclopédistes,3,3,0,0,0
+quilter,3,0,0,3,0
+biathlete,2,1,0,1,0
+sprinter,2,0,0,2,0
+radiologist,2,0,1,1,0
+high school teacher,2,0,2,0,0
+furniture maker,2,1,1,0,0
+patent inventor,2,0,1,1,0
+theatre critic,2,0,0,2,0
+lighting designer,2,0,0,2,0
+ballet master,2,1,0,1,0
+scientific collector,2,0,2,0,0
+anciens cadres,2,0,0,2,0
+mind gamer,2,0,0,2,0
+tennis coach,2,0,0,2,0
+polymath,2,2,0,0,0
+bellfounder,2,2,0,0,0
+hatter,2,1,0,1,0
+nihonga painter,2,0,1,1,0
+art forger,2,0,2,0,0
+announcer,2,0,0,2,0
+tile painter,2,0,2,0,0
+archivist,2,0,1,1,0
+connoisseur,2,2,0,0,0
+book printer,2,2,0,0,0
+czechoslovak legionary,2,0,2,0,0
+tarento,2,0,0,2,0
+scribe,2,2,0,0,0
+map publishing person,2,2,0,0,0
+war correspondent,2,0,1,1,0
+dub actor,2,0,0,2,0
+chef,2,0,0,2,0
+ci lyric writer,2,2,0,0,0
+psychoanalyst,2,0,1,1,0
+justice of the peace,2,0,1,1,0
+ocean rower,2,0,0,2,0
+customs officer,2,0,1,1,0
+postmaster,2,0,1,1,0
+music critic,2,0,1,1,0
+podcaster,2,0,0,2,0
+suffragette,2,0,1,1,0
+museologist,2,0,2,0,0
+bretteur,2,1,0,1,0
+creative director,2,0,0,2,0
+humanist,2,1,0,1,0
+mapseller,2,2,0,0,0
+neurologist,2,1,1,0,0
+circus performer,2,0,1,1,0
+glassmaker,2,0,0,2,0
+master builder,2,2,0,0,0
+chaser,2,2,0,0,0
+missionary,2,2,0,0,0
+latin catholic priest,2,0,0,2,0
+background artist,2,0,0,2,0
+music journalist,2,0,0,2,0
+plower,2,0,2,0,0
+auctioneer,2,1,0,1,0
+ivory carver,2,2,0,0,0
+electrical engineer,2,0,2,0,0
+abstractionist,2,0,0,2,0
+logician,2,0,2,0,0
+music video director,2,0,0,2,0
+hydrographer,2,1,0,1,0
+bibliophile,2,0,1,1,0
+table tennis player,2,0,0,2,0
+cross-country skier,2,1,0,1,0
+australian rules football coach,2,0,0,2,0
+cabaret performer,2,0,1,1,0
+golfer,2,0,0,2,0
+public figure,2,0,2,0,0
+astronaut,2,0,1,1,0
+penciller,2,0,0,2,0
+nuclear physicist,2,0,0,2,0
+ethnologist,2,0,1,1,0
+darts player,2,0,0,2,0
+historian of mathematics,2,0,1,1,0
+lichenologist,2,0,0,2,0
+triathlete,2,0,0,2,0
+cricket umpire,2,0,0,2,0
+military physician,2,0,1,1,0
+artistic director,2,0,1,1,0
+railway engineer,2,1,1,0,0
+busshi,2,2,0,0,0
+military historian,2,0,1,1,0
+music director,2,0,0,2,0
+light artist,2,0,0,2,0
+bookbinder,2,0,1,1,0
+stonemason,2,2,0,0,0
+field hockey player,2,0,0,2,0
+religious leader,2,1,0,1,0
+bible translator,2,1,0,1,0
+catholic deacon,2,0,1,1,0
+silhouette artist,2,2,0,0,0
+multi-instrumentalist,2,0,0,2,0
+character designer,2,0,0,2,0
+cook,2,0,1,1,0
+socialite,2,0,1,1,0
+nurse,2,0,2,0,0
+pornographic film director,2,0,0,2,0
+grisaillist,2,2,0,0,0
+laconian vase-painter,2,2,0,0,0
+feminist,2,0,0,2,0
+travel writer,2,1,1,0,0
+postcard publisher,2,0,2,0,0
+glazier,2,1,1,0,0
+casting director,2,0,0,2,0
+fashion figure artist,2,0,2,0,0
+bronze sculptor,2,2,0,0,0
+puppet designer,2,0,1,1,0
+sport shooter,2,0,0,2,0
+clarinetist,2,0,1,1,0
+biblical scholar,2,2,0,0,0
+car designer,2,0,1,1,0
+functionary,2,0,1,1,0
+numismatist,2,1,0,1,0
+zookeeper,2,0,0,2,0
+dj producer,2,0,0,2,0
+company founder,2,0,2,0,0
+motorcycle racer,2,0,0,2,0
+greek vase-painter,2,2,0,0,0
+stand-up comedian,2,0,1,1,0
+double-bassist,2,0,0,2,0
+portrait photographer,2,0,2,0,0
+advocate,2,0,0,2,0
+audio engineer,2,0,0,2,0
+nun,2,2,0,0,0
+professeur des universités,2,0,1,1,0
+art advisor,2,2,0,0,0
+digital artist,2,0,0,2,0
+stuccoist,2,2,0,0,0
+medic,2,2,0,0,0
+literary historian,2,1,1,0,0
+proprietor,2,1,0,1,0
+military leader,2,1,0,1,0
+talent agent,2,0,1,1,0
+theorist,2,0,0,2,0
+fashion illustrator,2,0,2,0,0
+portrait painter,2,0,2,0,0
+jockey,2,0,0,2,0
+ruler,2,2,0,0,0
+bryologist,2,1,1,0,0
+animalier,2,1,1,0,0
+locomotive designer,1,1,0,0,0
+animal rights advocate,1,0,1,0,0
+biomedical engineer,1,0,0,1,0
+motivational speaker,1,0,0,1,0
+consultant,1,0,0,1,0
+fantasy author,1,0,0,1,0
+flautist,1,0,0,1,0
+formula one driver,1,0,0,1,0
+model railroader,1,0,0,1,0
+assyriologist,1,0,1,0,0
+telescope maker,1,1,0,0,0
+jazz pianist,1,0,0,1,0
+videographer,1,0,0,1,0
+coach,1,0,0,1,0
+badminton player,1,0,1,0,0
+master of the works,1,1,0,0,0
+cricket writer,1,0,0,1,0
+online streamer,1,0,0,1,0
+hospitaller,1,1,0,0,0
+deltiologist,1,0,0,1,0
+unitarian pastor,1,0,0,1,0
+student,1,0,0,1,0
+volcanologist,1,0,1,0,0
+sports executive,1,0,1,0,0
+salesperson,1,0,0,1,0
+adviser,1,0,0,1,0
+joiner,1,1,0,0,0
+renaissance humanist,1,0,0,1,0
+country musician,1,0,0,1,0
+amateur artist,1,1,0,0,0
+amateur mathematician,1,1,0,0,0
+q686932,1,0,1,0,0
+informant,1,0,0,1,0
+musical theatre actor,1,0,0,1,0
+body artist,1,0,0,1,0
+aeronautical engineer,1,0,1,0,0
+ice hockey coach,1,0,0,1,0
+financial analyst,1,0,0,1,0
+indologist,1,0,0,1,0
+white-collar worker,1,0,1,0,0
+silk manufacturer,1,1,0,0,0
+hermit,1,1,0,0,0
+scrivener,1,1,0,0,0
+object artist,1,0,0,1,0
+spanish maquis,1,0,0,1,0
+poker player,1,0,0,1,0
+mixed martial arts fighter,1,0,0,1,0
+homme de lettres,1,0,1,0,0
+forestry engineer,1,0,1,0,0
+mixed martial arts judge,1,0,0,1,0
+gamer,1,0,0,1,0
+decathlete,1,0,0,1,0
+primary school teacher,1,0,0,1,0
+samurai,1,1,0,0,0
+gymnast,1,0,0,1,0
+drug dealer,1,0,0,1,0
+rose breeder,1,0,1,0,0
+accountant,1,0,1,0,0
+railway worker,1,0,0,1,0
+business consultant,1,0,0,1,0
+q11569980,1,1,0,0,0
+army officer,1,1,0,0,0
+framer,1,0,0,1,0
+hellenist,1,0,0,1,0
+q26235618,1,1,0,0,0
+brass caster,1,1,0,0,0
+harvester,1,0,1,0,0
+submariner,1,0,0,1,0
+chief executive officer,1,0,0,1,0
+chinovnik,1,1,0,0,0
+rugby league coach,1,0,1,0,0
+map engraver,1,1,0,0,0
+medicinal chemist,1,0,0,1,0
+natural history artist,1,0,1,0,0
+magazine editor,1,0,0,1,0
+theatrologist,1,0,0,1,0
+land owner,1,0,1,0,0
+intellectual,1,0,0,1,0
+argillite carver,1,0,1,0,0
+plumber,1,0,0,1,0
+talent manager,1,0,0,1,0
+marine artist,1,0,1,0,0
+bard,1,0,0,1,0
+scenography,1,0,0,1,0
+train driver,1,0,1,0,0
+executive,1,0,0,1,0
+geomorphologist,1,0,0,1,0
+wardrobe stylist,1,0,0,1,0
+criminal,1,0,0,1,0
+encyclopedist,1,0,0,1,0
+astrophysicist,1,0,0,1,0
+q97768060,1,0,0,1,0
+local politician,1,0,0,1,0
+pretendian,1,0,0,1,0
+wood-turner,1,0,0,1,0
+industrial leader,1,1,0,0,0
+q65017096,1,0,1,0,0
+zoo director,1,0,1,0,0
+courtier,1,1,0,0,0
+accordionist,1,0,0,1,0
+slave trader,1,1,0,0,0
+evolutionary biologist,1,0,1,0,0
+folk artist,1,0,1,0,0
+jazz bassist,1,0,0,1,0
+data architect,1,0,1,0,0
+arachnologist,1,0,0,1,0
+empress consort,1,1,0,0,0
+winegrower,1,0,0,1,0
+venture capitalist,1,0,0,1,0
+experimental artist,1,0,0,1,0
+museum founder,1,1,0,0,0
+editor-in-chief,1,0,0,1,0
+club dj,1,0,0,1,0
+castellologist,1,0,1,0,0
+baseball coach,1,0,0,1,0
+ombudsperson,1,0,0,1,0
+newspaper proprietor,1,0,1,0,0
+shogun,1,1,0,0,0
+music programmer,1,0,0,1,0
+book designer,1,0,1,0,0
+mining engineer,1,0,0,1,0
+trade,1,0,1,0,0
+cosmographer,1,1,0,0,0
+dub director,1,0,0,1,0
+disability rights activist,1,0,0,1,0
+environmental statistician,1,0,0,1,0
+military writer,1,1,0,0,0
+firefighter,1,1,0,0,0
+opera director,1,0,0,1,0
+bass guitarist,1,0,0,1,0
+repetitor,1,0,1,0,0
+pen drawer,1,1,0,0,0
+speed skater,1,0,0,1,0
+church historian,1,0,0,1,0
+academic painter,1,0,1,0,0
+television maker,1,0,0,1,0
+theater artist,1,0,1,0,0
+latin catholic bishop,1,0,0,1,0
+former worker,1,0,0,1,0
+notary,1,0,1,0,0
+esports manager,1,0,0,1,0
+lay brother,1,1,0,0,0
+cuplé singer,1,0,1,0,0
+molecular biologist,1,0,0,1,0
+hurdler,1,0,0,1,0
+storyboard artist,1,0,0,1,0
+kickboxer,1,0,0,1,0
+baker,1,0,1,0,0
+clown,1,0,0,0,1
+political adviser,1,0,0,1,0
+whitesmith,1,1,0,0,0
+council member,1,0,0,1,0
+settler,1,0,0,1,0
+magician,1,0,1,0,0
+marine biologist,1,0,1,0,0
+innkeeper,1,0,0,1,0
+q97768293,1,0,0,1,0
+talk show host,1,0,0,1,0
+architectural designer,1,0,0,1,0
+sports journalist,1,0,0,1,0
+political journalist,1,0,0,0,1
+marine officer,1,0,0,1,0
+falconer,1,0,0,1,0
+prehistorian,1,0,0,1,0
+tobacconist,1,0,0,1,0
+fruit grower,1,0,0,1,0
+q84591759,1,0,1,0,0
+microbiologist,1,0,1,0,0
+large estate owner,1,1,0,0,0
+esperantologist,1,0,0,1,0
+beauty pageant contestant,1,0,0,1,0
+military aviator,1,0,0,1,0
+catholic theologian,1,0,0,1,0
+gouache painter,1,0,1,0,0
+wildlife rehabilitator,1,0,0,1,0
+antiquarian seller,1,1,0,0,0
+fabricator,1,0,1,0,0
+beamter,1,0,0,1,0
+eastern orthodox priest,1,1,0,0,0
+metallurgist,1,1,0,0,0
+folklorist,1,0,0,1,0
+heraldist,1,0,0,1,0
+slavicist,1,0,0,1,0
+tribal chief,1,1,0,0,0
+horse trainer,1,0,0,1,0
+keyboardist,1,0,0,1,0
+social anthropologist,1,0,1,0,0
+ironworker,1,1,0,0,0
+war artist,1,0,1,0,0
+go professional,1,0,0,1,0
+ambulance driver,1,0,1,0,0
+sheriff depute,1,0,1,0,0
+horse rider,1,0,0,1,0
+art of painting,1,1,0,0,0
+wikimedian in residence,1,0,0,0,1
+shipbuilder,1,1,0,0,0
+agrostologist,1,0,1,0,0
+q84592062,1,0,1,0,0
+schoolchild,1,0,0,1,0
+vocalist,1,0,0,1,0
+santero,1,1,0,0,0
+soil scientist,1,0,0,1,0
+education expert,1,0,0,1,0
+cashier,1,0,0,1,0
+sharecropper,1,0,1,0,0
+classical composer,1,0,1,0,0
+paestan vase-painter,1,1,0,0,0
+micropaleontologist,1,0,0,1,0
+folk dancer,1,0,1,0,0
+mime artist,1,0,0,1,0
+javelin thrower,1,0,1,0,0
+erotic photography model,1,0,0,1,0
+anchorite,1,1,0,0,0
+stage painter,1,1,0,0,0
+religious studies scholar,1,0,1,0,0
+memoirist,1,1,0,0,0
+mixed martial arts referee,1,0,0,1,0
+hydraulic engineer,1,0,0,1,0
+rhetoric teacher,1,0,0,1,0
+improviser,1,0,1,0,0
+contractor,1,0,0,1,0
+papyrologist,1,0,0,1,0
+woodwind instrument maker,1,1,0,0,0
+pharmacologist,1,0,0,1,0
+newsagent,1,0,0,1,0
+pixel artist,1,0,0,1,0
+proofreader,1,1,0,0,0
+preservationist,1,0,0,1,0
+fabulist,1,1,0,0,0
+software architect,1,0,0,1,0
+ashigaru,1,1,0,0,0
+horse breeder,1,0,0,1,0
+vexillographer,1,0,1,0,0
+wet nurse,1,0,0,1,0
+nanny,1,0,0,1,0
+cricket coach,1,0,0,1,0
+photographic publisher,1,0,1,0,0
+head coach,1,0,0,1,0
+aphorist,1,0,0,1,0
+film theorist,1,0,0,1,0
+commercial artist,1,0,1,0,0
+lens designer,1,0,1,0,0
+volunteer serving one year,1,0,1,0,0
+bandy player,1,0,0,1,0
+serial killer,1,0,0,1,0
+school teacher,1,0,0,1,0
+radio producer,1,0,0,1,0
+ascetic,1,0,0,1,0
+scientific instrument maker,1,1,0,0,0
+news presenter,1,0,0,1,0
+ornamentist,1,1,0,0,0
+jinete,1,0,1,0,0
+nonce,1,0,0,1,0
+photo artist,1,0,0,1,0
+chansonnier,1,0,1,0,0
+postal worker,1,0,1,0,0
+music executive,1,0,0,1,0
+visiting professor,1,0,0,1,0
+ophthalmologist,1,0,0,1,0
+stunt performer,1,0,0,1,0
+aerospace engineer,1,0,0,1,0
+administrative lawyer,1,0,1,0,0
+conchologist,1,0,1,0,0
+marksman,1,0,1,0,0
+synchronized swimmer,1,0,0,1,0
+impresario,1,0,0,1,0
+cover artist,1,0,0,1,0
+science journalist,1,0,0,1,0
+metal engraver,1,1,0,0,0
+dean,1,0,1,0,0
+drug trafficker,1,0,0,1,0
+tea master,1,1,0,0,0
+science communicator,1,0,0,1,0
+ethologist,1,0,0,1,0
+boater,1,0,1,0,0
+vj,1,0,0,1,0
+secretary,1,1,0,0,0
+television writer,1,0,0,1,0
+sports commentator,1,0,0,1,0
+assistant professor,1,0,0,1,0
+health minister,1,0,0,1,0
+showman,1,0,0,1,0
+white house photographer,1,0,0,1,0
+sporting director,1,0,0,1,0
+wikipedian,1,0,0,1,0
+athletic director,1,0,0,1,0
+rhetorician,1,1,0,0,0
+research assistant,1,0,0,1,0
+reporter,1,0,1,0,0
+fencer,1,0,1,0,0
+curator at the bibliothèque nationale de france,1,1,0,0,0
+haiku poet,1,1,0,0,0
+christian nun,1,1,0,0,0
+bodybuilder,1,0,0,1,0
+alpine skier,1,0,1,0,0
+yōga painter,1,0,0,1,0
+coleopterist,1,0,1,0,0
+gesakusha,1,1,0,0,0
+sheriff principal,1,0,1,0,0
+skilled trade,1,0,1,0,0
+abbess,1,1,0,0,0
+wikimedian,1,0,0,1,0
+holographer,1,0,0,1,0
+xiangsheng performer,1,0,0,1,0
+catholic cleric,1,0,0,1,0
+administrator,1,0,1,0,0
+minutemen,1,1,0,0,0
+sportsperson,1,0,0,1,0
+lutenist,1,1,0,0,0
+gun smith,1,1,0,0,0
+advertising person,1,0,1,0,0
+apologist,1,1,0,0,0
+demographer,1,0,0,1,0
+acting instructor,1,0,0,1,0
+expert pharmacist,1,1,0,0,0
+pool player,1,0,0,1,0
+cosmetologist,1,0,1,0,0
+regent,1,0,1,0,0
+church fathers,1,1,0,0,0
+spy,1,0,1,0,0
+bioinformatician,1,0,0,1,0
+fighter pilot,1,0,0,1,0
+track cyclist,1,0,0,1,0
+electrician,1,0,1,0,0
+doctor of the church,1,1,0,0,0
+sports photographer,1,0,0,1,0
+pop singer,1,0,0,0,1
+classical pianist,1,0,0,1,0
+activist shareholder,1,0,0,1,0
+miller,1,0,1,0,0
+gardener,1,0,1,0,0
+farmworker,1,0,1,0,0
+glider pilot,1,0,1,0,0
+lexicographer,1,0,0,1,0
+animal trainer,1,0,1,0,0
+product designer,1,0,0,1,0
+chalkidian vase-painter,1,1,0,0,0
+veterinarian,1,0,0,1,0
+health economist,1,0,0,1,0
+broadcaster,1,0,0,1,0
+bank teller,1,0,1,0,0
+cultural studies scholar,1,0,0,1,0
+attic potter,1,1,0,0,0
+automotive engineer,1,0,1,0,0
+church musician,1,0,1,0,0
+stripper,1,0,0,1,0
+herbalist,1,0,1,0,0
+midwife,1,0,1,0,0
+rangaku scholar,1,1,0,0,0
+prelate,1,1,0,0,0
+bioethicist,1,0,0,1,0
+game book author,1,0,0,1,0
+chairperson,1,0,0,1,0
+figure skating choreographer,1,0,0,1,0
+king,1,1,0,0,0
+person with substance use disorder,1,0,0,1,0
+tanner,1,0,1,0,0
+pamphleteer,1,0,1,0,0
+photography critic,1,0,1,0,0
+mythographer,1,1,0,0,0
+squatter,1,0,0,1,0
+make-up artist,1,0,0,1,0
+miner,1,0,0,1,0
+real estate agent,1,0,0,1,0
+polar explorer,1,0,1,0,0
+pathologist,1,0,1,0,0
+neuroscientist,1,1,0,0,0
+building manager,1,0,1,0,0
+tapestry artist,1,1,0,0,0
+marine architect,1,0,1,0,0
+moral theologian,1,0,0,1,0
+drama teacher,1,0,0,1,0
+beach handball player,1,0,0,1,0
+hotel manager,1,0,0,1,0
+country singer,1,0,0,1,0
+apothecary,1,1,0,0,0
+design engineer,1,1,0,0,0
+beekeeper,1,0,1,0,0
+train conductor,1,0,0,1,0
+pornographic film producer,1,0,0,1,0
+evangelical theologian,1,0,0,1,0
+human resource manager,1,0,0,1,0
+canadian football player,1,0,0,1,0
+faience maker,1,0,1,0,0
+afsetter,1,1,0,0,0
+schoolmaster,1,1,0,0,0
+philosophy historian,1,0,0,1,0
+film screenwriter,1,0,0,1,0
+sociobiologist,1,0,0,1,0
+humanitarian,1,0,1,0,0
+scholar of english,1,0,0,1,0
+theatre maker,1,0,0,1,0
+chronicler,1,0,0,1,0
+woodcut process,1,1,0,0,0
+conquistador,1,1,0,0,0
+dissident,1,0,0,1,0
+colonial administrator,1,0,1,0,0
+gem engraver,1,1,0,0,0
+rugby league administrator,1,0,1,0,0
+liberal profession,1,0,0,1,0
+philatelist,1,0,1,0,0
+social scientist,1,0,0,1,0
+waka poet,1,1,0,0,0
+canon law jurist,1,1,0,0,0
+earth scientist,1,0,0,1,0
+school director,1,0,0,1,0
+historian of classical antiquity,1,0,1,0,0
+plasterer,1,1,0,0,0
+agricultural engineer,1,0,0,1,0
+rock climber,1,0,0,1,0
+alchemist,1,1,0,0,0
+tattoo artist,1,0,0,1,0
+hurler,1,0,0,1,0
+rōshi,1,0,0,1,0
+religious,1,1,0,0,0
+republican militiaman  (spanish civil war),1,0,1,0,0
+metalworker,1,0,1,0,0
+american football coach,1,0,0,1,0
+architectural historian,1,0,1,0,0
+housewife,1,0,1,0,0
+equestrian,1,0,0,1,0
+virologist,1,0,0,1,0
+piano tuner,1,0,1,0,0
+queen regnant,1,1,0,0,0
+satirist,1,0,0,1,0
+social reformer,1,1,0,0,0
+flute maker,1,1,0,0,0
+powerlifter,1,0,0,1,0
+primatologist,1,0,0,1,0
+seal cutter,1,0,1,0,0
+photoengraver,1,0,1,0,0
+garibaldino,1,0,1,0,0
+finger painter,1,1,0,0,0
+mystic,1,0,1,0,0
+bushi,1,1,0,0,0
+television personality,1,0,0,1,0
+organizational founder,1,0,0,1,0
+pastor,1,1,0,0,0
+game designer,1,0,0,1,0
+member of the state duma,1,0,0,1,0
+veteran,1,0,0,1,0
+armourer,1,1,0,0,0
+terrorism,1,0,0,1,0
+augur,1,1,0,0,0
+test pilot,1,0,0,1,0
+speedway rider,1,0,0,1,0
+graduate assistant,1,0,0,1,0
+choir director,1,0,0,1,0
+internist,1,0,0,1,0
+bowls player,1,0,0,1,0
+meteorologist,1,1,0,0,0
+structural engineer,1,0,0,1,0
+cowboy,1,0,0,1,0
+topographer,1,1,0,0,0
+comics creator,1,0,0,1,0
+stunt pilot,1,0,1,0,0
+conferencier,1,0,0,1,0
+investigative journalist,1,0,0,1,0
+music publisher,1,0,1,0,0
+gunsmith,1,0,1,0,0
+company director,1,0,0,1,0
+brigand,1,1,0,0,0
+rheumatologist,1,0,0,1,0
+cooper,1,1,0,0,0
+chess composer,1,0,0,1,0
+currier,1,0,0,1,0
+electronic literature writer,1,0,0,1,0
+religious sister,1,1,0,0,0
+general practitioner,1,0,0,1,0
+anti-abortion activist,1,0,0,1,0
+epidemiologist,1,0,0,1,0
+interdisciplinary artist,1,0,0,1,0
+skydiver,1,0,0,1,0
+dance historian,1,0,0,1,0
+weightlifter,1,0,0,1,0
+twitch streamer,1,0,0,1,0
+seiyū,1,0,0,1,0
+backing vocalist,1,0,1,0,0
+beadworker,1,0,0,1,0
+aquatic biologist,1,0,1,0,0
+rapist,1,0,1,0,0
+park ranger,1,0,0,1,0
+nonprofit administrator,1,0,0,1,0
+broadcasting executive,1,0,0,1,0
+event producer,1,0,0,1,0
+nft artist,1,0,0,1,0
+french moralist,1,1,0,0,0
+executive director,1,0,0,1,0
