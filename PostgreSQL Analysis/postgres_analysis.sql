@@ -6,6 +6,7 @@ SELECT
 FROM artists a
 JOIN artist_movements am ON a.artist_name = am.artist_name AND a.birth_year = am.birth_year
 JOIN movements m ON am.movement_name = m.movement_name
+WHERE m.movement_name != 'Unknown'
 GROUP BY m.movement_name
 ORDER BY active_duration DESC;
 
@@ -50,6 +51,7 @@ SELECT
 FROM artist_styles ast
 JOIN artists a ON ast.artist_name = a.artist_name AND ast.birth_year = a.birth_year
 JOIN styles st ON ast.style_name = st.style_name
+WHERE st.style_name != 'Unknown'
 GROUP BY st.style_name
 ORDER BY style_duration DESC, total_artists DESC;
 
