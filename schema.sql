@@ -39,11 +39,11 @@ CREATE TABLE Artist_Birth_Places (
 -- Artist_Death_Places Many-to-Many Table
 CREATE TABLE Artist_Death_Places (
   artist_name TEXT NOT NULL,
-  birth_year INT,
-  birth_year_key INT GENERATED ALWAYS AS (COALESCE(birth_year, -999999)) STORED,
+  death_year INT,
+  death_year_key INT GENERATED ALWAYS AS (COALESCE(death_year, -999999)) STORED,
   place_name TEXT NOT NULL,
-  PRIMARY KEY (artist_name, birth_year_key, place_name),
-  FOREIGN KEY (artist_name, birth_year_key) REFERENCES Artists(artist_name, birth_year_key) ON DELETE CASCADE,
+  PRIMARY KEY (artist_name, death_year_key, place_name),
+  FOREIGN KEY (artist_name, death_year_key) REFERENCES Artists(artist_name, birth_year_key) ON DELETE CASCADE,
   FOREIGN KEY (place_name) REFERENCES Places(place_name) ON DELETE CASCADE
 );
 
@@ -119,7 +119,6 @@ CREATE TABLE Artist_Movements (
   birth_year INT,
   birth_year_key INT GENERATED ALWAYS AS (COALESCE(birth_year, -999999)) STORED,
   movement_name TEXT NOT NULL,
-  years_active JSONB,
   PRIMARY KEY (artist_name, birth_year_key, movement_name),
   FOREIGN KEY (artist_name, birth_year_key) REFERENCES Artists(artist_name, birth_year_key) ON DELETE CASCADE,
   FOREIGN KEY (movement_name) REFERENCES Movements(movement_name) ON DELETE CASCADE
@@ -142,3 +141,6 @@ CREATE TABLE Artist_Styles (
   FOREIGN KEY (artist_name, birth_year_key) REFERENCES Artists(artist_name, birth_year_key) ON DELETE CASCADE,
   FOREIGN KEY (style_name) REFERENCES Styles(style_name) ON DELETE CASCADE
 );
+
+ALTER TABLE Artist_Styles
+ADD CONSTRAINT unique_artist_style UNIQUE (artist_name, birth_year, style_name);
