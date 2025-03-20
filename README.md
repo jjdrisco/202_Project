@@ -1,5 +1,4 @@
 # Global Art Exploration and Analysis
-in Neo4j, Postgresql, Redis
 
 *By: John Driscoll, Taylor Martinez, Thuy Nguyen*
 
