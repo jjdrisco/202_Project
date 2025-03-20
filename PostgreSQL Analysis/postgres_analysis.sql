@@ -12,7 +12,7 @@ ORDER BY active_duration DESC;
 
 SELECT nationality, COUNT(*) AS artist_count
 FROM artists
-WHERE birth_year >= EXTRACT(YEAR FROM CURRENT_DATE) - 200
+WHERE birth_year >= EXTRACT(YEAR FROM CURRENT_DATE) - 200 AND nationality IS NOT NULL
 GROUP BY nationality
 ORDER BY artist_count DESC;
 
