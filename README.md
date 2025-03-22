@@ -13,7 +13,7 @@ Other Resources:
 | Resource | Location |
 |----------|----------|
 | Presentation Slides | See "Presentation_Slides.pdf" |
-| Written Report | See "Global_Art_Exploration_And_Analysis.pdf" |
+| Written Report | See "Report_Global_Art_Exploration_and_Analysis.pdf" |
 | Examples and Use Cases | See folder "example_usage/" for questions we implemented and answered with this tool |
 
 ---
